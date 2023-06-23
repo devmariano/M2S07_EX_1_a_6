@@ -16,7 +16,7 @@ const HeaderComponent = () => {
 
     return (
         <nav className="navbar bg-body-tertiary" data-bs-theme="dark">
-            <div class="container">
+            <div className="container">
                 <div>
                     {username && <span className="navbar-brand mb-0 h1">Bem-vindo, {username}!</span>}
                 </div>
