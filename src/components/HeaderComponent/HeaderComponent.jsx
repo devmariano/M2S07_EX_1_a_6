@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './HeaderComponent.css'
 
-const Header = () => {
+const HeaderComponent = () => {
     const [username, setUsername] = useState('');
 
     const handleClick = () => {
@@ -19,7 +18,7 @@ const Header = () => {
         <nav className="navbar bg-body-tertiary" data-bs-theme="dark">
             <div class="container">
                 <div>
-                    {username && <span class="navbar-brand mb-0 h1">Bem-vindo, {username}!</span>}
+                    {username && <span className="navbar-brand mb-0 h1">Bem-vindo, {username}!</span>}
                 </div>
                 <div>
                     {username == '' && <button className='btn btn-success' onClick={handleClick}>Insira seu nome</button>}
@@ -30,4 +29,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default HeaderComponent;
