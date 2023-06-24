@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CardComponent from '../CardComponent/CardComponent';
+import SearchComponent from '../SearchComponent/SearchComponent';
 
 const FormComponent = () => {
   const [nickname, setNickname] = useState('');
@@ -89,6 +90,7 @@ const FormComponent = () => {
           </form>
           {errorMessage && <p>{errorMessage}</p>}
         </div>
+        
         <div className="col-md-6">
           <div className="row">
             <div className="mb-3 mt-5">
@@ -100,6 +102,11 @@ const FormComponent = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="row mt-5">
+        <div className="col-md-6 ">
+          <SearchComponent users={users} />
         </div>
       </div>
     </div>
